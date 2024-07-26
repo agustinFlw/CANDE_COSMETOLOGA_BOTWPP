@@ -1,0 +1,10 @@
+# Ignorar la carpeta de dependencias
+node_modules/
+
+# Ignorar la carpeta de sesiones del bot
+bot_sessions/
+
+# Ignorar archivos específicos del sistema o temporales
+*.log
+*.env
+.DS_Store
