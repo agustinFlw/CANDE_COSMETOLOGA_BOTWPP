@@ -119,7 +119,7 @@ const flowCatalogo=addKeyword(['Catalogo','Catálogo','lista de precio'])
     .addAnswer('Enviando...')
     .addAnswer('🙇‍♀️ ¡Este es el catalogo!',
         {
-            media:'https://i.imgur.com/jBWLqVq.jpeg'
+            media:'https://i.imgur.com/9dAqJrp.jpeg'
         }, async (ctx,{gotoFlow})=>{
             console.log('goto flowLoop');
             await gotoFlow(flowLoop);
