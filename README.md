@@ -1,4 +1,5 @@
 ### CHATBOT Whatsapp (Baileys Provider)
+![image](https://github.com/user-attachments/assets/26024a96-cc11-4bd4-82b5-7368f89f82fc)
 
 <p align="center">
   <img width="300" src="https://i.imgur.com/Oauef6t.png">
@@ -20,3 +21,5 @@ npm start
 - [💻 Discord](https://link.codigoencasa.com/DISCORD)
 - [👌 Twitter](https://twitter.com/leifermendez)
 - [🎥 Youtube](https://www.youtube.com/watch?v=5lEMCeWEJ8o&list=PL_WGMLcL4jzWPhdhcUyhbFU6bC0oJd2BR)
+- https://github.com/agustinFlw
+- 
