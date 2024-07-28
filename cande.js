@@ -1,23 +1,12 @@
 const { createBot, createProvider, createFlow, addKeyword, EVENTS } = require('@bot-whatsapp/bot')
 
-const QRPortalWeb = require('@bot-whatsapp/portal')
-const BaileysProvider = require('@bot-whatsapp/provider/baileys')
-const MockAdapter = require('@bot-whatsapp/database/mock')
-const memoryUsage = process.memoryUsage();
-const contUso=0;
-// calculo de RAM
-// const formatMemory = (bytes) => (bytes / 1024 / 1024).toFixed(2) + ' MB';
-// const printMemoryUsage = () => {
-//   const memoryUsage = process.memoryUsage();
-//   console.log(`RSS: ${formatMemory(memoryUsage.rss)}`);
-// //   console.log(`Heap Total: ${formatMemory(memoryUsage.heapTotal)}`);
-// //   console.log(`Heap Used: ${formatMemory(memoryUsage.heapUsed)}`);
-// //   console.log(`External: ${formatMemory(memoryUsage.external)}`);
-//   console.log('-------------------------------');
-// };
+const QRPortalWeb = require('@bot-whatsapp/portal');
+const BaileysProvider = require('@bot-whatsapp/provider/baileys');
+const MockAdapter = require('@bot-whatsapp/database/mock');
 
-// setInterval(printMemoryUsage, 900000);
-// const flowStats= addKeyword('!estadisticas')
+
+// ----------------------------flows
+
 
 const flowPrueba = addKeyword('!bot').addAnswer('🤖Bot activo')
 
@@ -120,6 +109,7 @@ const flowCatalogo=addKeyword(['Catalogo','Catálogo','lista de precio'])
     .addAnswer('🙇‍♀️ ¡Este es el catalogo!',
         {
             media:'https://i.imgur.com/9dAqJrp.jpeg'
+            
         }, async (ctx,{gotoFlow})=>{
             console.log('goto flowLoop');
             await gotoFlow(flowLoop);
@@ -145,8 +135,10 @@ const main = async () => {
     },{
         blackList:['5492944132255','5492804626844','5492945416401','5492804378262']
     })
-
-    QRPortalWeb()
+    
+    QRPortalWeb({ port:3001})
 }
+
+main()
 
 main()
